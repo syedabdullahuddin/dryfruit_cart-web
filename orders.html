@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders - FreshCart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="announcement-bar">
+        <div class="container">
+            <p>Super Value Deals - Save more with coupons</p>
+            <div class="language-selector">
+                <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/gb.svg" alt="English" width="16">
+                <span>English</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>FreshCart</span>
+                </a>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search for products">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <div class="header-actions">
+                <button class="location-btn">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Location</span>
+                </button>
+                
+                <div class="user-actions">
+                    <a href="#" class="wishlist">
+                        <i class="far fa-heart"></i>
+                        <span class="badge">4</span>
+                    </a>
+                    <a href="account.html" class="account">
+                        <i class="far fa-user"></i>
+                    </a>
+                    <a href="cart.html" class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge">5</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <button class="categories-btn">
+                <i class="fas fa-th-large"></i>
+                <span>All Departments</span>
+            </button>
+            
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="#">Home <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Shop <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Stores <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Mega menu <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Account <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Docs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="account-section">
+        <div class="container">
+            <div class="account-container">
+                <div class="account-sidebar">
+                    <ul class="account-menu">
+                        <li class="active">
+                            <a href="orders.html">
+                                <i class="fas fa-shopping-bag"></i>
+                                Your Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="settings.html">
+                                <i class="fas fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="address.html">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Address
+                            </a>
+                        </li>
+                        <li>
+                            <a href="payment.html">
+                                <i class="fas fa-credit-card"></i>
+                                Payment Method
+                            </a>
+                        </li>
+                        <li>
+                            <a href="notification.html">
+                                <i class="fas fa-bell"></i>
+                                Notification
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#" class="logout">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="account-content">
+                    <h1>Your Orders</h1>    
+                    <div class="orders-table">
+                        <div class="orders-header">
+                            <div class="order-col">Product</div>
+                            <div class="order-col">Order</div>
+                            <div class="order-col">Date</div>
+                            <div class="order-col">Items</div>
+                            <div class="order-col">Status</div>
+                            <div class="order-col">Amount</div>
+                            <div class="order-col"></div>
+                        </div>
+                        <div class="order-row">
+                            <div class="order-col product-col">
+                                <img src="https://via.placeholder.com/50" alt="Product" class="product-img">
+                                <div class="product-info">
+                                    <h3>Haldiram's Nagpur Aloo Bhujia</h3>
+                                    <p>400g</p>
+                                </div>
+                            </div>
+                            <div class="order-col">#14899</div>
+                            <div class="order-col">March 5, 2023</div>
+                            <div class="order-col">1</div>
+                            <div class="order-col">
+                                <span class="status processing">Processing</span>
+                            </div>
+                            <div class="order-col">$15.00</div>
+                            <div class="order-col">
+                                <button class="view-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Order 2 -->
+                        <div class="order-row">
+                            <div class="order-col product-col">
+                                <img src="https://via.placeholder.com/50" alt="Product" class="product-img">
+                                <div class="product-info">
+                                    <h3>Nutri Choise Biscuit</h3>
+                                    <p>2 Pkt</p>
+                                </div>
+                            </div>
+                            <div class="order-col">#14658</div>
+                            <div class="order-col">July 9, 2023</div>
+                            <div class="order-col">2</div>
+                            <div class="order-col">
+                                <span class="status completed">Completed</span>
+                            </div>
+                            <div class="order-col">$45.00</div>
+                            <div class="order-col">
+                                <button class="view-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Order 3 -->
+                        <div class="order-row">
+                            <div class="order-col product-col">
+                                <img src="https://via.placeholder.com/50" alt="Product" class="product-img">
+                                <div class="product-info">
+                                    <h3>Cadbury Dairy Milk 5 Star Bites</h3>
+                                    <p>202 g</p>
+                                </div>
+                            </div>
+                            <div class="order-col">#13778</div>
+                            <div class="order-col">Oct 03, 2023</div>
+                            <div class="order-col">4</div>
+                            <div class="order-col">
+                                <span class="status completed">Completed</span>
+                            </div>
+                            <div class="order-col">$99.00</div>
+                            <div class="order-col">
+                                <button class="view-btn">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Now Button (Fixed) -->
+    <div class="buy-now-fixed">
+        <button class="buy-now-btn">
+            <i class="fas fa-shopping-cart"></i>
+            Buy Now
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
