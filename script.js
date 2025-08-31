@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile menu toggle
+
     const categoriesBtn = document.querySelector('.categories-btn');
     const navLinks = document.querySelector('.nav-links');
     
@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinks.classList.toggle('show');
         });
     }
-    
-    // Dropdown menus
+
     const dropdownItems = document.querySelectorAll('.nav-item a i.fa-chevron-down');
     
     dropdownItems.forEach(item => {
@@ -19,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Product card hover effect
+    
     const productCards = document.querySelectorAll('.product-card');
     
     productCards.forEach(card => {
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Buy Now button
+
     const buyNowBtn = document.querySelector('.buy-now-btn');
     
     if (buyNowBtn) {
@@ -41,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Delete account confirmation
+    
     const deleteBtn = document.querySelector('.delete-btn');
     
     if (deleteBtn) {
@@ -52,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Form submission
+    
     const forms = document.querySelectorAll('form');
     
     forms.forEach(form => {
@@ -62,18 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // // View order details
-    // const viewBtns = document.querySelectorAll('.view-btn');
-    
-    // viewBtns.forEach(btn => {
-    //     btn.addEventListener('click', function() {
-    //         const orderRow = this.closest('.order-row');
-    //         const orderId = orderRow.querySelector('.order-col:nth-child(2)').textContent;
-    //         alert(`Viewing details for order ${orderId}`);
-    //     });
-    // });
-    
-    // Add responsive data attributes for mobile view
+
     const orderRows = document.querySelectorAll('.order-row');
     
     orderRows.forEach(row => {
@@ -90,4 +78,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 if (window.announcementClosed) {
     document.querySelector('.announcement-bar').remove();
+
 }
